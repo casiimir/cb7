@@ -1,0 +1,27 @@
+img {
+  padding: 2px;
+  border-radius: 8px;
+  box-shadow: inset 0 0 4px 2px rgba(0, 0, 0, 0.446);
+}
+p {
+  visibility: hidden;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.modal {
+  position: fixed;
+  top: 50px;
+  left: calc(50% - 146px);
+  width: 260px;
+  background-color: lightseagreen;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+  color: white;
+}
