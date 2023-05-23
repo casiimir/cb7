@@ -1,0 +1,28 @@
+.cartList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.cartItem {
+  width: 140px;
+  height: 140px;
+  padding: 10px 20px;
+  border-radius: 12px;
+  box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.35s;
+}
+
+.cartItem:hover {
+  background-color: lightseagreen;
+  color: white;
+}
+
+.cartItem:active {
+  background-color: lightsalmon;
+  transform: scale(0.8);
+}
