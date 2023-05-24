@@ -30,8 +30,12 @@ In entrambi gli esercizi 1 e 2, se i dati non sono disponibili, impostare un val
 Creare un'applicazione "To-Do List" utilizzando HTML, CSS e JavaScript. Questa applicazione dovrebbe permettere all'utente di:
 
 - Inserire un nuovo compito da fare in un campo di input.
-- Premere un bottone per aggiungere il compito alla lista.
+- Premere un bottone per aggiungere il compito alla lista. (Con metodo HTTP POST)
 - Visualizzare la lista dei compiti da fare.
-- Cancellare un compito dalla lista cliccando su di esso.
+- Cancellare un compito dalla lista cliccando su di esso. (Con metodo HTTP DELETE)
 
 > Potete optare creando una parte in statico (HTML) o direttamente tutto in dinamico, in questo caso gli elementi essenziali non rappresenterebbero un ostacolo. <br>Usare il CSS per rendere l'applicazione visivamente piacevole. Ad esempio, potresti cambiare lo stile dei compiti completati.
+
+Usare la seguente api: https://dummyjson.com/docs/todos
+
+> Leggere da documentazione come effettuare i relativi metodi per inviare una nuova todo e per cancellarla. Trovate tutto lì.
