@@ -1,0 +1,31 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  width: 300px;
+  border: 1px solid lightgray;
+  border-radius: 12px;
+}
+
+.cart__cartList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.cartItem {
+  width: 140px;
+  height: 140px;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid lightgray;
+}
