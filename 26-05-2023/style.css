@@ -1,0 +1,40 @@
+* {
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.wrapper {
+  padding: 12px;
+  border: 1px solid lightgray;
+  border-radius: 12px;
+  width: 300px;
+}
+
+.wrapper form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.wrapper ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+.wrapper ul li {
+  padding: 2px 4px;
+  cursor: pointer;
+  transition: all 0.35;
+}
+
+.wrapper ul li:active {
+  background-color: blueviolet;
+  color: white;
+}
