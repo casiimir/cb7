@@ -1,0 +1,237 @@
+header {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+}
+
+.mainLogo {
+    padding: 12px;
+}
+
+.logoWrapper {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.25s ease;
+}
+
+.logoWrapper:hover {
+    background-color: var(--color-hover);
+}
+
+.logoWrapper svg {
+    width: 24px;
+    height: auto;
+    fill: var(--color-text);
+}
+
+/* Nav */
+.navLinks {
+    list-style-type: none;
+    /* padding: 12px; */
+}
+
+.navItem  {}
+
+.navItem:hover .navLink__content {
+    background-color: var(--color-hover);
+}
+
+
+.navLink {
+    color: var(--color-text);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    display: inline-block;
+}
+
+.navLink__content {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.navItem.active .navLink__content {
+    color: var(--color-brand);
+}
+
+.navItem.active .navLink__icon svg {
+    fill: var(--color-brand);
+}
+
+.navItem.dot .navLink__icon::after {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    top: -4px;
+    right: -4px;
+    border-radius: 50%;
+    background-color: var(--color-brand);
+}
+
+.navLink__icon {
+    position: relative;
+}
+
+.navLink__icon svg {
+    width: 24px;
+    height: auto;
+    fill: var(--color-text);
+}
+/* end Nav */
+
+/* headeCTA */
+.headerCta {
+    position: relative;
+    margin: 12px 0;
+}
+/* buttonTwit */
+.buttonTwit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 36px;
+    background-color: var(--color-brand);
+
+}
+/* end buttonTwit */
+/* end headeCTA */
+
+/* profile button */
+.profileButton {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px;
+    border-radius: 36px;
+    cursor: pointer;
+    transition: background-color 0.25s ease;
+}
+
+.profileButton:hover {
+    background-color: var(--color-hover);
+}
+
+.profileButton__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.profileButton__username {
+    font-weight: 700;
+}
+
+.profileButton__image {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profileButton__image img {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.profileButton__actions svg {
+    width: 24px;
+    height: auto;
+    fill: var(--color-text);
+}
+/* end profile button */
+
+
+/* media query mobile and tablet */
+@media screen and (max-width: 1024px) {
+    header {
+        width: 88px;
+    }
+    .navLinks {
+        padding: 12px;
+    }
+    .navLink__content {
+        padding: 12px;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+    }
+
+    .navLink__label {
+        display: none;
+    }
+
+    .headerCta {
+        padding-left: 12px;
+    }
+
+    .buttonTwit {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+
+    .buttonTwit svg {
+        width: 24px;
+        height: auto;
+        fill: var(--color-text);
+    }
+
+    .buttonTwit .buttonTwit__label {
+        display: none;
+    }
+
+    .profileButton {
+        display: inline-flex;
+        justify-content: center;
+        border-radius: 50%;
+    }
+
+    .profileButton__user,  
+    .profileButton__actions {
+        display: none;
+    }
+
+}
+
+/* media query desktop */
+@media screen and (min-width: 1025px) {
+    header {
+        width: 25%;
+        padding-right: 40px;
+    }
+
+    .navLink__content {
+        padding: 12px 20px;
+        border-radius: 26px;
+    }
+
+    .buttonTwit {
+        cursor: pointer;
+        min-height: 50px;
+    }
+
+    .buttonTwit .buttonTwit__icon {
+        display: none;
+    }
+    
+    .buttonTwit .buttonTwit__label {
+        padding: 12px 20px;
+        font-weight: 700;
+        font-size: 18px;
+        letter-spacing: 1px;
+    }
+}

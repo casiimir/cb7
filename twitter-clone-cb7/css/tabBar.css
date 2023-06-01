@@ -1,0 +1,47 @@
+.tabBar {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color:rgba(0, 0, 0, 0.65);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--color-border);
+}
+
+.tabBar__title {
+    padding: 20px;
+}
+
+.tabBar__tabs {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tabBar__tab {
+    position: relative;
+    width: 50%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.tabBar__tab::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width:  20%;
+    height: 4px;
+    border-radius: 8px;
+    background-color: var(--color-brand);
+    opacity: 0;
+    transition: all 0.25s ease;
+}
+
+.active.tabBar__tab::after {
+    opacity: 1;
+}
+

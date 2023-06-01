@@ -1,0 +1,121 @@
+.mainContainer {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.mainContent {
+  /* height: 300vh; */
+}
+
+.content {
+  border-left:  1px  solid var(--color-border);
+  border-right:  1px  solid var(--color-border);
+}
+
+.sidebar {
+}
+
+/* Components */
+.tweet {
+  display: flex;
+  gap: 30px;
+  padding: 20px;
+  /* border-top:  1px  solid var(--color-border); */
+  border-bottom:  1px  solid var(--color-border);
+}
+
+.tweet:first-child {
+  border-top:  1px  solid var(--color-border);
+}
+
+.tweet img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  background-color: white;
+  border-radius: 100%;
+}
+
+.tweet__content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.tweet__profile {
+  display: flex;
+  gap: 10px;
+}
+
+.tweet__profileName {
+  font-weight: 700;
+}
+
+.tweet__profileUsername {
+  color: var(--color-text-light);
+}
+
+.tweet__reactions {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.tweet__icon__heart {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  /* background-color: yellow; */
+  background-image: url('data:image/svg+xml,<svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" fill="%23e7e9ea"><path d="M12 21.593c-5.63-5.539-11-10.297-11-14.402 0-3.791 3.068-5.191 5.281-5.191 1.312 0 4.151.501 5.719 4.457 1.59-3.968 4.464-4.447 5.726-4.447 2.54 0 5.274 1.621 5.274 5.181 0 4.069-5.136 8.625-11 14.402m5.726-20.583c-2.203 0-4.446 1.042-5.726 3.238-1.285-2.206-3.522-3.248-5.719-3.248-3.183 0-6.281 2.187-6.281 6.191 0 4.661 5.571 9.429 12 15.809 6.43-6.38 12-11.148 12-15.809 0-4.011-3.095-6.181-6.274-6.181"/></svg>');
+  background-repeat: no-repeat;
+  background-size: 16px 16px;
+  background-position: center center;
+  transition: all 0.25s ease;
+}
+
+.tweet__reactions:hover {
+  color: var(--color-text-red);
+}
+
+.tweet__reactions:hover .tweet__icon__heart {
+  background-image: url('data:image/svg+xml,<svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" fill="%23f91880"><path d="M12 21.593c-5.63-5.539-11-10.297-11-14.402 0-3.791 3.068-5.191 5.281-5.191 1.312 0 4.151.501 5.719 4.457 1.59-3.968 4.464-4.447 5.726-4.447 2.54 0 5.274 1.621 5.274 5.181 0 4.069-5.136 8.625-11 14.402m5.726-20.583c-2.203 0-4.446 1.042-5.726 3.238-1.285-2.206-3.522-3.248-5.719-3.248-3.183 0-6.281 2.187-6.281 6.191 0 4.661 5.571 9.429 12 15.809 6.43-6.38 12-11.148 12-15.809 0-4.011-3.095-6.181-6.274-6.181"/></svg>');
+  background-color: var(--color-bg-red);
+}
+
+/* media query mobile and tablet */
+@media screen and (max-width: 1024px) {
+  .mainContent {
+    width: calc(100% - 88px);
+  }
+
+  .sidebar {
+    display: none;
+  }
+}
+
+/* media query desktop */
+@media screen and (min-width: 1025px) {
+  .mainContainer {
+    padding-left: 7%;
+    padding-right: 7%;
+  }
+
+  .mainContent {
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .content {
+    width: 65%;
+  }
+
+  .sidebar {
+    width: 35%;
+  }
+}
