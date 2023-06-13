@@ -1,0 +1,40 @@
+.Card {
+  padding: 12px 6px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  border-radius: 16px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+}
+
+.Card__img {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+.Card__brand {
+  color: gray;
+  font-size: 0.9rem;
+}
+
+.Card__title,
+.Card__brand,
+.Card__info {
+  margin: 12px 0 0 0;
+}
+
+.Card__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.Card__info--price {
+  text-decoration: none;
+  color: black;
+}

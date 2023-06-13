@@ -1,0 +1,19 @@
+.Navbar {
+  padding: 8px 32px;
+  background-color: lightseagreen;
+  color: white;
+}
+
+.Navbar__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Navbar__list--item a {
+  padding-left: 5px;
+  color: black;
+  font-weight: bold;
+  border-left: 2px solid black;
+  text-decoration: none;
+}

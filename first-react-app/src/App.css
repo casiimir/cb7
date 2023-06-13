@@ -1,0 +1,9 @@
+.App {
+}
+
+.App__productList {
+  margin: 20px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
