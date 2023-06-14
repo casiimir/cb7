@@ -1,0 +1,26 @@
+.Button {
+  width: 140px;
+  height: 40px;
+  border: 0;
+  border-radius: 12px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+  color: white;
+  cursor: pointer;
+  transition: background 0.35s;
+}
+
+.activeBtn {
+  background-color: #20b2aa;
+}
+
+.activeBtn:active {
+  background: #0c676f;
+}
+
+.passiveBtn {
+  background: #f08080;
+}
+
+.passiveBtn:active {
+  background: #9f3a3a;
+}
