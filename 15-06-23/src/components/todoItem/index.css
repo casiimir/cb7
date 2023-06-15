@@ -1,0 +1,27 @@
+.TodoItem {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.TodoItem img {
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+}
+
+.TodoItem__username {
+  font-weight: bold;
+}
+
+.TodoItem input[type="checkbox"] {
+  appearance: none;
+  padding: 8px;
+  border: 2px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.TodoItem input[type="checkbox"]:checked {
+  background-color: black;
+}

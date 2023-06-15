@@ -1,0 +1,11 @@
+body {
+  margin: 0;
+  background-color: #ffe5a9;
+  /* user-select: none; */
+  -webkit-user-drag: none;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+}
