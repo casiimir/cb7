@@ -1,0 +1,38 @@
+.TopBar {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  background-color: #fafafa;
+  box-shadow: 0px 0.33px 0px #a6a6aa;
+  height: 60px;
+}
+
+.TopBar__Logo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.TopBar__Actions {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.TopBar__Camera,
+.TopBar__Logo,
+.TopBar__Actions--tv,
+.TopBar__Actions--msg {
+  cursor: pointer;
+  transition: transform 1s;
+}
+
+.TopBar__Camera:active,
+.TopBar__Logo:active,
+.TopBar__Actions--tv:active,
+.TopBar__Actions--msg:active {
+  transform: rotate(359deg);
+}

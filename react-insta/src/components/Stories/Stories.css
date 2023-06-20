@@ -1,0 +1,25 @@
+.Stories {
+  position: relative;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  padding: 12px 0;
+}
+
+.Stories::-webkit-scrollbar {
+  display: none;
+}
+
+.Stories__List {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.Stories__Item:first-child {
+  padding-left: 12px;
+}
+
+.Stories__Item:last-child {
+  padding-right: 12px;
+}
