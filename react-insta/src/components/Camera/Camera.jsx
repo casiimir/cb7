@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { filtersData } from "../../mocks/filters";
 import "./index.css";
 
 const Camera = () => {
@@ -6,6 +7,10 @@ const Camera = () => {
     audio: false,
     video: { width: 396, height: 1080 },
   });
+
+  const [filterState, setFilterState] = useState("");
+
+  const [rangeInput, setRangeInput] = useState(0);
 
   useEffect(() => {
     navigator.mediaDevices
@@ -23,7 +28,38 @@ const Camera = () => {
       });
   }, []);
 
-  return <video className="Camera"></video>;
+  const onSetFilterState = (state) => setFilterState(state);
+
+  const onRangeInputChange = (e) => setRangeInput(e.target.value);
+
+  return (
+    <>
+      <video
+        className={`Camera ${filterState}`}
+        // style={{ filter: `blur(${rangeInput}px)` }}
+      ></video>
+      {/* <input
+        type="range"
+        name=""
+        id=""
+        value={rangeInput}
+        onChange={onRangeInputChange}
+      /> */}
+      <div className="Camera__filters">
+        <ul>
+          {filtersData?.map((filter) => (
+            <li
+              className={filter.name}
+              onClick={() => onSetFilterState(filter.name)}
+            >
+              <img src="https://picsum.photos/100" alt="" />
+              <p>{filter.title}</p>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </>
+  );
 };
 
 export default Camera;

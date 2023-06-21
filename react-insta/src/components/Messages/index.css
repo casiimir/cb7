@@ -1,0 +1,48 @@
+.Messages {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.Messages__chat {
+  display: flex;
+  align-items: center;
+  padding: 6px 0;
+  cursor: pointer;
+}
+
+.Messages__chat:active {
+  background-color: lightgrey;
+}
+
+.Messages__chat img {
+  width: 60px;
+  border-radius: 100%;
+}
+
+.Messages__chat--text {
+  display: flex;
+  flex-direction: column;
+}
+
+.Messages__chat--text p:nth-of-type(1) {
+  font-size: 0.9rem;
+}
+
+.Messages__chat--text p:nth-of-type(2) {
+  font-size: 0.8rem;
+  color: rgb(113, 113, 113);
+}
+
+.singleChat {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.singleChat__msg {
+  padding: 0 20px;
+  border-radius: 20px;
+  background-color: lightseagreen;
+  color: white;
+}

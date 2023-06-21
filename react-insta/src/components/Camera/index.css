@@ -4,3 +4,72 @@
   width: 100vw;
   height: calc(100vh - 66px);
 }
+
+.Camera__filters {
+  position: absolute;
+  bottom: 20px;
+  padding: 10px;
+  width: 100%;
+}
+
+.Camera__filters ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  height: 100%;
+  list-style-type: none;
+  padding: 0;
+}
+
+.Camera__filters ul li {
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+.Camera__filters ul li img {
+  width: 100%;
+  border-radius: 100%;
+  opacity: 0.5;
+}
+
+.Camera__filters ul li p {
+  color: white;
+  font-size: 0.7rem;
+  text-align: center;
+}
+
+.one {
+  font-weight: bold;
+  filter: contrast(2.2) saturate(4) sepia(1);
+}
+
+.two {
+  font-weight: bold;
+  filter: invert(1);
+}
+
+.two::before {
+  position: absolute;
+  top: -26px;
+  left: 26%;
+  content: "🧁";
+  filter: invert(1);
+}
+
+.three {
+  font-weight: bold;
+  filter: invert(0.1) contrast(1.2) saturate(1.5);
+}
+
+.four {
+  font-weight: bold;
+  filter: grayscale(1);
+}
+
+.five {
+  font-weight: bold;
+  filter: hue-rotate(3.142rad);
+}

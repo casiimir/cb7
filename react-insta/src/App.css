@@ -3,3 +3,8 @@
   margin: 0 auto;
   /* text-align: center; */
 }
+
+.darkMode {
+  background-color: black;
+  color: white;
+}
