@@ -38,7 +38,6 @@ const Messages = () => {
         return (
           <div className="singleChat">
             <p onClick={() => onSetChatName("")}>{"<-"}</p>
-
             {messages[0].messages.map((message) => (
               <p
                 className="singleChat__msg"

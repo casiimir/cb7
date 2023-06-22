@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import "./Post.css";
 
 import { LikeIcon } from "../../icons";
@@ -6,6 +6,8 @@ import { LikeIcon } from "../../icons";
 const Post = ({ post }) => {
   const { isLike } = post;
   const [like, setLike] = useState(isLike);
+
+  const likeRef = useRef(null);
 
   const toggleLike = () => {
     setLike((prev) => !prev);
@@ -34,10 +36,19 @@ const Post = ({ post }) => {
         ))}
       </div>
       <div className="PostActions">
-        <div onClick={() => toggleLike()} className="PostActions__Like">
+        <div
+          ref={likeRef}
+          onClick={() => toggleLike()}
+          className="PostActions__Like"
+        >
           <LikeIcon fill={like && like ? "#FD1D1D" : "#262626"} />
         </div>
       </div>
+      <button
+        onClick={() => (likeRef.current.style.borderBottom = "2px solid red")}
+      >
+        cliccami
+      </button>
     </article>
   );
 };

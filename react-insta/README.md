@@ -1,18 +1,9 @@
-# Esercizio 1
+# Esercizio
 
-Sulla base della lezione del giorno, utilizzare il servizio `https://www.npoint.io/` per creare e hostare su un indirizzo remoto i mocks creati nella lezione di ieri (Lunedì), personalizzateli se volete, ma non è indispensabile.
-A questo punto, sostituite i mocks con delle chiamate fetch, implementando `useEffect` all'interno della vostra applicazione.
-
-# Esercizio 2
-
-Implementare il conditional rendering sulla navbar di modo che possiamo switchare sui diversi stati della nostra applicazione, come abbiamo fatto a lezione con lo switch su App.
-
-# Esercizio 3
-
-Implementare la funzione Camera, copiatene pure il componente sulla vostra applicazione
+Sulla base della lezione del giorno, completare la sezione relativa alla chat/messaggistica.
 
 # Avanzato
 
-Procedere con lo sviluppo e l'implementazione della sezione relativa ai messaggi
+Implementare una qualunque funzionalità già presente sul reale Instagram, ricordate, l'obiettivo è quello di avere sempre più funzionalità in ogni singolo progettino che poi andrà a popolare il vostro portfolio.
 
 > Ricordate di lavorare sempre sulla stessa repository e che la consegna sarà per domani alle 12:00.

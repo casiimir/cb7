@@ -3,8 +3,14 @@ import "./TopBar.css";
 //incons
 import { CameraIcon, IGTVIcon, LogoIcon, MessangerIcon } from "../../icons";
 
-const TopBar = ({ setSection }) => {
-  const onHandleClick = (sectionName) => setSection(sectionName);
+const TopBar = ({ setSection, setCamera }) => {
+  const onHandleClick = (sectionName) => {
+    if (sectionName !== "camera") {
+      setSection(sectionName);
+      setCamera(true);
+    }
+    setSection(sectionName);
+  };
 
   return (
     <div className="TopBar">

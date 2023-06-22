@@ -19,10 +19,18 @@ function App() {
   const [posts, setPosts] = useState([]);
   const [isDarkMode, setDarkMode] = useState(false);
 
+  const [isLoading, setLoading] = useState(false);
+  const [camera, setCamera] = useState(false);
+
   useEffect(() => {
     fetch("https://api.npoint.io/c59d0538fafba6432ffe")
-      .then((res) => res.json())
-      .then((data) => setPosts(data));
+      .then((res) => {
+        setLoading(true);
+
+        return res.json();
+      })
+      .then((data) => setPosts(data))
+      .finally(() => setLoading(false));
   }, []);
 
   const onSectionRender = () => {
@@ -35,7 +43,7 @@ function App() {
           </>
         );
       case "camera":
-        return <Camera />;
+        return <Camera camera={camera} setCamera={setCamera} />;
       case "tv":
         return <h1>TVVVVV</h1>;
       case "messages":
@@ -45,11 +53,17 @@ function App() {
 
   return (
     <div className={`${isDarkMode && "darkMode"}`}>
-      <TopBar setSection={setSection} />
-      <button onClick={() => setDarkMode((prev) => !prev)}>
-        {isDarkMode ? "🌑" : "☀️"}
-      </button>
-      {onSectionRender()}
+      {isLoading ? (
+        <p>Loading...</p>
+      ) : (
+        <>
+          <TopBar setSection={setSection} setCamera={setCamera} />
+          <button onClick={() => setDarkMode((prev) => !prev)}>
+            {isDarkMode ? "🌑" : "☀️"}
+          </button>
+          {onSectionRender()}
+        </>
+      )}
     </div>
   );
 }
