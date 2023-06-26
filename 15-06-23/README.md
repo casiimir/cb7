@@ -1,4 +1,4 @@
-# Esercizio
+# Esercizio <3
 
 A partire dall'esercitazione della todo list, creare una nuova repo che ricrei tre todo-list (su base del mock dei 200 todos presi a lezione dal seguente `https://jsonplaceholder.typicode.com/todos`) e che rispetti:
 
