@@ -1,0 +1,12 @@
+.Products {
+  position: relative;
+  width: 600px;
+  margin: 0 auto;
+}
+
+.Products__btn {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  cursor: pointer;
+}

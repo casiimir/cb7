@@ -1,0 +1,13 @@
+.ProductsStatic {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  overflow-x: scroll;
+}
+
+.ProductsStatic img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 100%;
+}
