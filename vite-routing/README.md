@@ -1,20 +1,11 @@
-# Eserczio 1
+# Esercizio
 
-Sulla base della lezione del giorno, cominciare ad impostare le `pagine statiche`:
+Sulla base della lezione del giorno, applicare al progetto iniziato ieri, tre layouts:
 
-- Home
-- About
-- Contacts
-- Locations
-
-Inoltre aggiungere una `pagina dinamica` nello stesso percorso di `locations`. Al momento non importa popolare questa sezione
+1. Generale - deve coinvolgere tutte le pagine;
+2. Promozionale - su una pagina statica deve mostrare un qualunque stile a scelta diverso, che includa anche il layout Generale;
+3. Su pagine Dinamiche - su una pagina dinamica mostrare anche qui stile a scelta, che includa almeno una seconda navbar (laterale sarebbe ideale) e che includa anche il layout Generale.
 
 # Avanzato
 
-Popolare la pagina dinamica `locations` aggiuggendo informazioni e dettagli relativi alla destinazione scelta
-
-> Per entrambi gli esercizi utilizzare come punto di partenza il mock presente al percorso `/mocks/reservations.js`
-
-> Creare una nuova repository su Github, sarà oggetto di esercitazione di tutta la settimana
-
-> Attenzione! Dovete usare SASS e CSS Modules! Stili, abbellimenti e modello design del sito è a piacere di ogni singolo studente. Prendete ispirazione da Dribbble, et simili.
+Scrivere le rotte sia in versione array di oggetti che in JSX (`<Route />`)
