@@ -19,11 +19,20 @@ const DefaultLayout = ({ children }) => {
       name: "Who",
       value: "/who",
     },
+    {
+      id: 4,
+      name: "👤",
+      value: "/login",
+    },
+    {
+      id: 5,
+      name: "Dashboard",
+      value: "/dashboard",
+    },
   ];
 
   return (
     <div className={styles.DefaultLayout}>
-      <Outlet />
       <div className={styles.navbar}>
         <ul>
           {links.map((link) => (
@@ -33,9 +42,12 @@ const DefaultLayout = ({ children }) => {
           ))}
         </ul>
       </div>
-      {children}
+      <div className={styles.content}>{children}</div>
       <div className={styles.footer}>
         <p>copyright 2023 {"<3"} Edgemony CB7</p>
+      </div>
+      <div className={styles.content}>
+        <Outlet />
       </div>
     </div>
   );

@@ -1,11 +1,11 @@
 # Esercizio
 
-Sulla base della lezione del giorno, applicare al progetto iniziato ieri, tre layouts:
+Sulla base della lezione del giorno, creare un sistema di autenticazione basato su mock (fate pure a vostra scelta), purchè integri:
 
-1. Generale - deve coinvolgere tutte le pagine;
-2. Promozionale - su una pagina statica deve mostrare un qualunque stile a scelta diverso, che includa anche il layout Generale;
-3. Su pagine Dinamiche - su una pagina dinamica mostrare anche qui stile a scelta, che includa almeno una seconda navbar (laterale sarebbe ideale) e che includa anche il layout Generale.
+- pagina Login - form di accesso
+- pagina Dashboard - mostra informazioni dell'utente loggato
+- gestire tramite flag sul localStorage, come per esempio visto a lezione con 'true' se l'utente risulta loggato.
 
 # Avanzato
 
-Scrivere le rotte sia in versione array di oggetti che in JSX (`<Route />`)
+Implementare un sistema più complesso, sempre lato localStorage, che permetta di switchare sullo stesso link alla navbar da login a dashboard. (Attenzione non stessa pagina, le pagine saranno sempre disposte come specificato nell'esercizio sopra)
