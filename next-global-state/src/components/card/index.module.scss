@@ -1,0 +1,13 @@
+.Card {
+  width: 200px;
+  padding: 6px 12px;
+  box-shadow: 0 0 2px rgba(255, 242, 0, 0.458);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.15s;
+
+  &:hover {
+    background-color: yellow;
+    color: black;
+  }
+}
