@@ -1,0 +1,31 @@
+.TodoList {
+  width: 100%;
+
+  .heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+
+    form {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+
+      .addBtn {
+        width: 40px;
+        height: 40px;
+        background-color: transparent;
+        border: 1px solid;
+        border-radius: 12px;
+        font-size: 2rem;
+        cursor: pointer;
+
+        &:hover {
+          background-color: rgb(158, 103, 220);
+          color: white;
+        }
+      }
+    }
+  }
+}
